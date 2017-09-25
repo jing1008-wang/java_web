@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户管理</title>
+    <link rel="stylesheet" type="text/css" href="./Bootstrap/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/user.css">
+    <script src="./jquery/jquery.js"></script>
+    <script src="./javascript/user.js"></script>
+</head>
+<body>
+<div id="header">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <ul class="nav nav-tabs">
+                <li><a href="index.html">那一年影院</a></li>
+                <li><a href="./studio.html">演出厅管理</a></li>
+                <li><a href="./seat.html">座位管理</a></li>
+                <li class="active"><a href="./user.html">用户管理</a></li>
+                <li class="nav navbar-nav navbar-right"><a href="./login.html"><span><i class="fa fa-sign-out" aria-hidden="true"></i></span>退出登录</a></li>
+                <li class="nav navbar-nav navbar-right"><a href="#"><span><i class="fa fa-user-md" aria-hidden="true"></i></span> 系统管理员</a></li>
+            </ul>
+
+        </div>
+    </nav>
+</div>
+
+
+<!--所有的演出厅-->
+<div id = "table">
+    <table class="table table-striped ">
+    <caption>那一年影院人员</caption>
+    <tbody>
+    <tr class="warning">
+        <td >姓名</td>
+        <td >性别</td>
+        <td >职位</td>
+        <td >联系方式</td>
+    </tr>
+    <tr>
+        <td>王晶</td>
+        <td>女</td>
+        <td>系统管理员</td>
+        <td>182××××3578</td>
+
+    </tr>
+    <tr >
+        <td>王一茹</td>
+        <td>女</td>
+        <td>售票员</td>
+        <td>188××××7436</td>
+    </tr>
+    <tr>
+        <td>刘凡</td>
+        <td>女</td>
+        <td>经理</td>
+        <td>153××××7569</td>
+    </tr>
+    <tr>
+        <td>闵盼</td>
+        <td>女</td>
+        <td>经理</td>
+        <td>188××××7243</td>
+
+    </tr>
+    </tbody>
+</table>
+</div>
+
+<!--演出厅的增删改查-->
+<div>
+    <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="查找演出厅">
+        </div>
+        <button type="submit" class="btn btn-default"><i class="fa fa-search" aria-hidden="true"></i>查找</button>
+        <button type="button" class="btn btn-default navbar-btn"><i class="fa fa-plus" aria-hidden="true"></i> 添加用户</button>
+        <button type="button" class="btn btn-default navbar-btn"><i class="fa fa-minus" aria-hidden="true"></i> 删除用户</button>
+        <button type="button" class="btn btn-default navbar-btn"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> 修改用户</button>
+    </form>
+
+</div>
+</body>
+</html>
